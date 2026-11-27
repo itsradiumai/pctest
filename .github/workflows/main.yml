@@ -350,7 +350,7 @@ jobs:
         run: .\scripts\Setup-Remote.ps1
       - name: Session - connect now
         env:
-        MINUTES: ${{ inputs.session_minutes }}
+          MINUTES: ${{ inputs.session_minutes }}
         run: |
           Write-Host 'TECH Decode Cloud PC'
           Write-Host "RustDesk direct address: $env:TAILSCALE_IP`:21118"
